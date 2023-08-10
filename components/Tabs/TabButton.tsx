@@ -14,11 +14,11 @@ const TabButton: React.FC<TabButtonProps> = ({ label, keyCheck, link }) => {
   const currentUrl =
     router.asPath.slice(1) === "" ? "what" : router.asPath.slice(1);
   return (
-    <Link href={link}
+    <Link
+      href={link}
       className={`text-xsm text-center font-bold leading-5 uppercase flex-1 py-[15px] hover:bg-rega-blue transition-all hover:bg-opacity-20 ${
         keyCheck ? "px-[15px]" : ""
       } ${currentUrl === link ? "text-[#2187E5]" : "text-[#555]"}`}
-      
     >
       {label}
     </Link>
