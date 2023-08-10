@@ -30,4 +30,7 @@
     .containerPage {
       @apply max-w-[1440px] mx-auto;
     }
+    .layout{
+      @apply max-w-[86rem] mx-auto md:w-full;
+    }
 }
